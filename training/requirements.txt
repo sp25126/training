@@ -1,0 +1,41 @@
+# Core ML and NLP
+torch>=2.0.0
+transformers>=4.44.0
+accelerate>=0.24.0
+bitsandbytes>=0.41.0
+sentence-transformers>=2.2.2
+
+# Web and API
+fastapi>=0.104.0
+uvicorn>=0.24.0
+aiohttp>=3.9.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+
+# File processing
+aiofiles>=23.2.1
+python-multipart>=0.0.6
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+
+# NEW: Audio and Video processing
+moviepy>=1.0.3
+SpeechRecognition>=3.10.0
+pydub>=0.25.1
+yt-dlp>=2024.1.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Telegram
+python-telegram-bot[all]>=20.0
+
+# Utilities
+python-dotenv>=1.0.0
+pathlib>=1.0.0
+# Enhanced web scraping
+youtube-transcript-api>=0.6.0
+yt-dlp>=2024.1.0
+beautifulsoup4>=4.12.0
+aiohttp>=3.9.0

@@ -1,0 +1,57 @@
+{
+  "version": "auto-py-to-exe-configuration_v1",
+  "pyinstallerOptions": {
+    "filePaths": [
+      "gui_app.py"
+    ],
+    "onefile": true,
+    "console": false,
+    "additionalFilesAndFolders": [
+      {
+        "SRC": "config",
+        "DEST": "config"
+      },
+      {
+        "SRC": "core",
+        "DEST": "core"
+      },
+      {
+        "SRC": "utils", 
+        "DEST": "utils"
+      },
+      {
+        "SRC": "integrations",
+        "DEST": "integrations"
+      },
+      {
+        "SRC": ".env",
+        "DEST": "."
+      }
+    ],
+    "hiddenImports": [
+      "torch",
+      "transformers",
+      "aiohttp",
+      "aiofiles",
+      "PyPDF2",
+      "youtube_transcript_api",
+      "yt_dlp",
+      "moviepy",
+      "speech_recognition"
+    ],
+    "pathEx": [],
+    "specpath": "./",
+    "noconfirm": true,
+    "uacAdmin": false,
+    "uacUiaccess": false,
+    "distpath": "./dist",
+    "workpath": "./build",
+    "ascii": false,
+    "cleanBuildBeforeBuilding": false,
+    "stripOrOptimize": "0"
+  },
+  "nonPyinstallerOptions": {
+    "increaseRecursionLimit": true,
+    "manualArguments": "--add-data \".env;.\" --hidden-import=torch --hidden-import=transformers --collect-all torch --collect-all transformers --collect-all aiohttp"
+  }
+}
